@@ -1,0 +1,62 @@
+{
+  "name": "use-actor-amplified",
+  "version": "1.0.0",
+  "description": "A different take on the useActor hook in @xstate/react.",
+  "homepage": "https://github.com/DanielGiljam/use-actor-amplified#readme",
+  "bugs": "https://github.com/DanielGiljam/use-actor-amplified/issues",
+  "license": "MIT",
+  "author": "Daniel Giljam (https://github.com/DanielGiljam)",
+  "files": [
+    "useActorAmplified.d.ts"
+  ],
+  "main": "useActorAmplified.js",
+  "module": "useActorAmplified.js",
+  "sideEffects": false,
+  "types": "useActorAmplified.d.ts",
+  "repository": "github:DanielGiljam/use-actor-amplified",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "prettier": "prettier --check .",
+    "format": "prettier --write .",
+    "tlp": "npm run tsc && npm run lint && npm run prettier",
+    "tff": "npm run tsc && npm run fix && npm run format",
+    "prepare": "husky install && npm run build"
+  },
+  "dependencies": {
+    "dequal": "^2.0.2",
+    "use-isomorphic-layout-effect": "^1.1.1"
+  },
+  "devDependencies": {
+    "@danielgiljam/eslint-config": "^3.0.1",
+    "@danielgiljam/prettierrc": "^3.0.0",
+    "@types/react": "^17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard-jsx": "^10.0.0",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "typescript": "^4.3.5",
+    "xstate": "^4.23.1"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.19",
+    "react": "^17.0.2",
+    "xstate": "^4.23.1"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  }
+}
